@@ -1,0 +1,23 @@
+---
+title: "Budget and Revenue"
+---
+
+The scatter plot below @fig-budget-revenue plots each film's production budget against its revenue.
+
+```{python}
+import pandas as pd
+import matplotlib.pyplot as plt
+
+films = pd.read_csv("films.csv")
+```
+
+```{python}
+#| echo: true
+#| label: fig-budget-revenue
+#| fig-cap: "Production budget against revenue (million US$)"
+
+plt.scatter(films["budget_musd"], films["revenue_musd"])
+plt.xlabel("Budget (million US$)")
+plt.ylabel("Revenue (million US$)")
+plt.show()
+```

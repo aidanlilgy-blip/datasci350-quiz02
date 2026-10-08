@@ -1,0 +1,13 @@
+---
+title: "Box Office Numbers"
+---
+
+Hi everyone! This website explores 104 well-known films from 1980 to 2025, with approximate budgets, worldwide revenues, runtimes, and ratings. This website is four pages long and relies on a box-office dataset.
+
+## Analysis Page
+
+- [Budget and Revenue](budget-revenue.qmd)
+- [Runtime and Ratings](runtime-rating.qmd)
+- [The Bond Films](bond.qmd)
+
+Asked Claude AI what a navigation bar was (not super relevant to this quiz).

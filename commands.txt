@@ -1,0 +1,49 @@
+
+## Setup
+
+gh repo fork danilofreire/datasci350-quiz02 --clone=false
+git clone https://github.com/aidanlilgy-blip/datasci350-quiz02.git
+cd datasci350-quiz02
+touch commands.txt
+
+## Task 1
+
+quarto create project website .
+ls -a
+
+## Task 2
+
+echo "/_site/" >> .gitignore
+echo "__pycache__/" >> .gitignore
+git add .gitignore
+git commit -m "Add gitignore"
+
+## Task 3
+
+nano _quarto.yml
+
+## Task 4
+
+rm about.qmd
+
+## Task 5
+
+No commands in command line
+
+## Task 6
+
+nano index.qmd
+
+## Task 7 
+
+nano budget-revenue.qmd
+
+## Task 8 
+
+nano runtime-rating.qmd
+
+## Task 9
+
+nano bond.qmd
+
+
