@@ -1,0 +1,44 @@
+[
+  {
+    "objectID": "budget-revenue.html",
+    "href": "budget-revenue.html",
+    "title": "Budget and Revenue",
+    "section": "",
+    "text": "The scatter plot below Figure 1 plots each film’s production budget against its revenue.\n\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\nfilms = pd.read_csv(\"films.csv\")\n\n\nplt.scatter(films[\"budget_musd\"], films[\"revenue_musd\"])\nplt.xlabel(\"Budget (million US$)\")\nplt.ylabel(\"Revenue (million US$)\")\nplt.show()\n\n\n\n\n\n\n\nFigure 1: Production budget against revenue (million US$)"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Box Office Numbers",
+    "section": "",
+    "text": "Hi everyone! This website explores 104 well-known films from 1980 to 2025, with approximate budgets, worldwide revenues, runtimes, and ratings. This website is four pages long and relies on a box-office dataset."
+  },
+  {
+    "objectID": "index.html#analysis-page",
+    "href": "index.html#analysis-page",
+    "title": "Box Office Numbers",
+    "section": "Analysis Page",
+    "text": "Analysis Page\n\nBudget and Revenue\nRuntime and Ratings\nThe Bond Films\n\nAsked Claude AI what a navigation bar was (not super relevant to this quiz)."
+  },
+  {
+    "objectID": "runtime-rating.html",
+    "href": "runtime-rating.html",
+    "title": "Runtime and Ratings",
+    "section": "",
+    "text": "Figure 1 plots each film’s runtime against its IMDb rating.\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\nfilms = pd.read_csv(\"films.csv\")\nplt.scatter(films[\"runtime_min\"], films[\"imdb_rating\"])\nplt.xlabel(\"Runtime (minutes)\")\nplt.ylabel(\"IMDb rating\")\nplt.show()\n\n\n\n\n\n\n\nFigure 1: Runtime (minutes) against IMDb rating"
+  },
+  {
+    "objectID": "runtime-rating.html#mean-rating-by-decade",
+    "href": "runtime-rating.html#mean-rating-by-decade",
+    "title": "Runtime and Ratings",
+    "section": "Mean rating by decade",
+    "text": "Mean rating by decade\n\nfilms[\"decade\"] = films[\"year\"] // 10 * 10\nfilms.groupby(\"decade\")[\"imdb_rating\"].mean().round(2)\n\ndecade\n1980    8.01\n1990    7.70\n2000    7.94\n2010    7.83\n2020    7.44\nName: imdb_rating, dtype: float64"
+  },
+  {
+    "objectID": "bond.html",
+    "href": "bond.html",
+    "title": "The Bond Films",
+    "section": "",
+    "text": "import pandas as pd\nimport matplotlib.pyplot as plt\n\nfilms = pd.read_csv(\"films.csv\")\nbond = films[films[\"franchise\"] == \"James Bond\"]\nbond = bond.sort_values(\"year\")\n\nThe Bond films run from 1995 to 2021.\n\nplt.plot(bond[\"year\"], bond[\"revenue_musd\"])\nplt.xlabel(\"Year\")\nplt.ylabel(\"Revenue (million US$)\")\nplt.show()\n\n\n\n\n\n\n\nFigure 1: Revenue of the Bond films over time"
+  }
+]
