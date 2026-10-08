@@ -10,4 +10,5 @@ Hi everyone! This website explores 104 well-known films from 1980 to 2025, with 
 - [Runtime and Ratings](runtime-rating.qmd)
 - [The Bond Films](bond.qmd)
 
-Asked Claude AI what a navigation bar was (not super relevant to this quiz).
+Asked Claude AI to compare my final commands.txt file with the listed tasks to see if I had written/tracked everything.
+Googled what a navigation bar was.

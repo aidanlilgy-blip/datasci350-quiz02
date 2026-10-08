@@ -25,10 +25,11 @@ nano _quarto.yml
 ## Task 4
 
 rm about.qmd
+nano _quarto.yml
 
 ## Task 5
 
-No commands in command line
+nano _quarto.yml
 
 ## Task 6
 
@@ -45,5 +46,27 @@ nano runtime-rating.qmd
 ## Task 9
 
 nano bond.qmd
+
+## Task 10
+
+quarto render
+ls
+git add .
+git commit -m "Add site pages and freeze"
+
+## Task 11
+
+quarto publish gh-pages
+utilized the first option and published the site with quarto publish gh-pages
+https://aidanlilgy-blip.github.io/datasci350-quiz02/
+
+
+## AI statement update
+
+nano index.qmd
+quarto publish gh-pages
+git add index.qmd commands.txt
+git commit -m "Update AI statement and command log"
+git push
 
 
